@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Nav/>
-      <ItemListContainer/>
+      <ItemListContainer mensaje="Bienvenido a Game Place"/>
     </div>
   );
 }
