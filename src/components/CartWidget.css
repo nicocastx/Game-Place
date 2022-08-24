@@ -1,0 +1,23 @@
+.carrito{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-items: center;
+    max-width: 40px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.icono-carrito{
+    width: 20px;
+    margin: auto;
+}
+
+.cart-img{
+    width: 100%;
+    filter:invert(1);
+}
+
+.contador{
+    margin: auto;
+}
