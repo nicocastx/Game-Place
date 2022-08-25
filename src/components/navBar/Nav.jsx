@@ -1,5 +1,6 @@
 import React from 'react';
 import Form from './Form';
+import './Nav.css';
 import CartWidget from './CartWidget';
 
 function Nav() {
