@@ -1,0 +1,19 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align:middle;
+}
+
+.card-body{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    vertical-align: middle;
+    flex-direction: column;
+}
+
+.card-img{
+    width: 80%;
+    margin: auto;
+}
