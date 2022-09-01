@@ -2,11 +2,14 @@ import React from 'react'
 import Juego from '../juego/Juego'
 
 
-export default function juegoList(juegos) {
-    juegos.map((juego, indice) =>
-                    <Juego juego = {juego} indice = {indice}/>
-                    )
+export default function juegoList({juegos}) {
+    
     return (
-        <div></div>
+        <div className='row'>
+            {juegos.map((juego, indice) =>
+                    <Juego juego = {juego} key = {indice}/>
+                    )}
+        </div>
+        
     )
 }

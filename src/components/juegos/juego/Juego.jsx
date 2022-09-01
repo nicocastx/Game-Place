@@ -7,9 +7,9 @@ function onAdd(stock, cant) {
     }
 }
 
-export default function Juego(juego, indice) {
+export default function Juego({juego}) {
     return (
-        <div className="card border-primary mb-3" key={indice} style={{ maxWidth: '20rem', margin: '10px' }}>
+        <div className="card border-primary mb-3" style={{ maxWidth: '20rem', margin: '10px' }}>
                         <div className="card-header">{juego.nombre}</div>
                         <div className="card-body">
                             <img className='card-img' src={juego.url} alt="imagen juego" />
