@@ -6,6 +6,7 @@ export default function JuegoDetail({ juego }) {
             <div className="card-header">{juego.nombre}</div>
             <div className="card-body">
                 <img src={juego.url} alt="" />
+                <p className="card-text">Precio: {juego.precio}</p>
                 <p className="card-text">{juego.descripcion}</p>
             </div>
         </div>

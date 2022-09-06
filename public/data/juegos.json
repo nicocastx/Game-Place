@@ -1,10 +1,10 @@
 [{
-"id": 1, "nombre": "Minecraft", "descripcion": "prueba1", "stock": 8, "url": "https://www.minecraft.net/content/dam/games/minecraft/key-art/Games_Subnav_Minecraft-300x465.jpg" },
-{ "id": 2, "nombre": "Devil May Cry 5", "descripcion": "prueba2", "stock": 12, "url": "https://i.blogs.es/94d4c1/devil-may-cry-5-analisis-01/1366_2000.jpg" }, 
-{ "id": 3, "nombre": "Mount and Blade: Bannerlord", "descripcion": "prueba3", "stock": 0, "url": "https://media.vandal.net/m/3-2020/202033118422596_1.jpg" }, 
-{ "id": 4, "nombre": "Total War: Warhammer 3", "descripcion": "prueba4", "stock": 24, "url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1142710/header.jpg?t=1661263346" }, 
-{ "id": 5, "nombre": "Civilization VI", "descripcion": "prueba5", "stock": 7, "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/es_LA/games/switch/s/sid-meiers-civilization-vi-switch/hero" }, 
-{ "id": 6, "nombre": "Hollow Knight", "descripcion": "prueba6", "stock": 3, "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/es_LA/games/switch/h/hollow-knight-switch/hero" }, 
-{ "id": 7, "nombre": "Age of Empires IV", "descripcion": "prueba7", "stock": 2, "url": "https://media.vandal.net/t200/51551/age-of-empires-4-202191617232066_1.jpg" }, 
-{ "id": 8, "nombre": "Killing Floor 2", "descripcion": "prueba8", "stock": 1, "url": "https://cdn1.epicgames.com/offer/affc33b82405457595a032f00284abd2/3f92fc65-f337-49e9-b5f8-8225ab5dc38f_1200x1600-cc435d1b298b51615ca8dc916d391b68" 
+"id": 1, "nombre": "Minecraft", "descripcion": "prueba1","precio": 14.99, "stock": 8, "url": "https://www.minecraft.net/content/dam/games/minecraft/key-art/Games_Subnav_Minecraft-300x465.jpg" },
+{ "id": 2, "nombre": "Devil May Cry 5", "descripcion": "prueba2","precio": 8.99, "stock": 12, "url": "https://i.blogs.es/94d4c1/devil-may-cry-5-analisis-01/1366_2000.jpg" }, 
+{ "id": 3, "nombre": "Mount and Blade: Bannerlord", "descripcion": "prueba3","precio": 9.99, "stock": 0, "url": "https://media.vandal.net/m/3-2020/202033118422596_1.jpg" }, 
+{ "id": 4, "nombre": "Total War: Warhammer 3", "descripcion": "prueba4","precio": 18.99, "stock": 24, "url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1142710/header.jpg?t=1661263346" }, 
+{ "id": 5, "nombre": "Civilization VI", "descripcion": "prueba5","precio": 2.99, "stock": 7, "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/es_LA/games/switch/s/sid-meiers-civilization-vi-switch/hero" }, 
+{ "id": 6, "nombre": "Hollow Knight", "descripcion": "prueba6","precio": 3.99, "stock": 3, "url": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/es_LA/games/switch/h/hollow-knight-switch/hero" }, 
+{ "id": 7, "nombre": "Age of Empires IV", "descripcion": "prueba7","precio": 12.99, "stock": 2, "url": "https://media.vandal.net/t200/51551/age-of-empires-4-202191617232066_1.jpg" }, 
+{ "id": 8, "nombre": "Killing Floor 2", "descripcion": "prueba8","precio": 1.99, "stock": 1, "url": "https://cdn1.epicgames.com/offer/affc33b82405457595a032f00284abd2/3f92fc65-f337-49e9-b5f8-8225ab5dc38f_1200x1600-cc435d1b298b51615ca8dc916d391b68" 
 }]
