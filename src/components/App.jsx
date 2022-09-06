@@ -1,15 +1,17 @@
 import React from 'react';
 import "./App.css";
 import Nav from "./navBar/Nav";
-import ItemListContainer from './itemListContainer/ItemListContainer';
 import JuegoList from './juegos/juegoListContainer/JuegoListContainer';
+import JuegoDetailContainer from './juegoDetailContainer/JuegoDetailContainer'
+
 
 function App() {
   return (
     <div className="App">
       <Nav/>
-      <ItemListContainer mensaje="Bienvenido a Game Place"/>
-      <JuegoList></JuegoList>
+      <h1 className = "main-title">Bienvenido a Game Place</h1>
+      <JuegoList/>
+      <JuegoDetailContainer/>
     </div>
   );
 }
