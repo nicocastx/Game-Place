@@ -5,8 +5,7 @@
 }
 
 .card-img{
-    width: 100%;
-    height: fit-content;
+    height: 100%;
 }
 
 .card-body{
@@ -19,4 +18,8 @@
 .btnDet{
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.imgContainer{
+    height: 50%;
 }

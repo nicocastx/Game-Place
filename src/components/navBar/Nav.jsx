@@ -2,15 +2,16 @@ import React from 'react';
 import Form from './Form';
 import './Nav.css';
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 function Nav() {
     return (
         <div className="navBar">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">
-                        Game Place
-                    </a>
+                <Link className="nav-link" to='/'>
+                    <h3>Game Place</h3>
+                </Link>
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -25,29 +26,28 @@ function Nav() {
                     <div className="collapse navbar-collapse" id="navbarColor02">
                         <ul className="navbar-nav me-auto">
                             <li className="nav-item">
-                                <a className="nav-link active" href="#">
+                                <Link className="nav-link" to='/'>
                                     Inicio
-                                    <span className="visually-hidden">(current)</span>
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
+                                <Link className="nav-link" to="/category/juegos">
                                     Juegos
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    Sobre Nosotros
-                                </a>
+                                <Link className="nav-link" to="/category/about">
+                                    Nosotros
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
+                                <Link className="nav-link" to="/category/contact">
                                     Contacto
-                                </a>
+                                </Link>
                             </li>
                         </ul>
-                        <CartWidget/>
-                        <Form contBuscar="Busque algun juego"/>
+                        <CartWidget />
+                        <Form contBuscar="Busque algun juego" />
                     </div>
                 </div>
             </nav>

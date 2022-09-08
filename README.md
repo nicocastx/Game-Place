@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Desarrollo de Proyecto React para Coderhouse: Game Place
+### Desarrollador: Kevin Castillo
+Este proyecto se trata de una tienda online de videojuegos donde se puede comprar a traves de un stock una cantidad de juegos especificos de una base de datos JSON}
+
 ## Available Scripts
 
 In the project directory, you can run:

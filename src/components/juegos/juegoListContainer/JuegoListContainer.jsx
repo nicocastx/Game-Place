@@ -15,19 +15,20 @@ import Loader from '../../Loader/Loader'
 export default function JuegoListContainer() {
     const [Juegos, setJuegos] = useState([]);
     const [isLoading, setIsLoading] = useState(true)
+    const getJuegosData = new Promise((res, rej) => {
+        setTimeout(() => {
+            res(fetch("../data/datajuegos.json"))
+        }, 2000);
+    })
     useEffect(() => {
-            getJuegosData
+        getJuegosData
             .then(response => response.json())
-            .then(data => {setJuegos(data)
-            setIsLoading(false)})
+            .then(data => {
+                setJuegos(data)
+                setIsLoading(false)
+            })
             .catch(error => console.log(error))
     }
     )
-    const getJuegosData = new Promise((res, rej) => {
-        setTimeout(() => {
-            res(fetch("./data/juegos.json"))
-        }, 2000);
-    })
-
-    return isLoading ? <Loader/> : <JuegoList juegos={Juegos}></JuegoList>
+    return isLoading ? <Loader /> : <JuegoList juegos={Juegos}></JuegoList>
 }

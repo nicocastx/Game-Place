@@ -1,12 +1,7 @@
 import React from "react";
 import ItemCounter from "./itemCounter/ItemCounter";
-import "./juego.css";
-
-function onAdd(stock, cant) {
-    if (stock > 0) {
-        console.log("se seleccionaron " + cant + " productos");
-    }
-}
+import "./Juego.css";
+import { Link } from "react-router-dom";
 
 export default function Juego({ juego }) {
     return (
@@ -16,13 +11,17 @@ export default function Juego({ juego }) {
         >
             <div className="card-header">{juego.nombre}</div>
             <div className="card-body">
-                <img className="card-img" src={juego.url} alt="imagen juego" />
-                <button type="button" className="btn btnDet btn-op btn-primary">
-                    Mostrar mas detalles
-                </button>
+                <div className="imgContainer">
+                    <img className="card-img" src={juego.url} alt="imagen juego" />
+                </div>
+                <Link to={`/item/${juego.id}`}>
+                    <button type="button" className="btn btnDet btn-op btn-primary">
+                        Mostrar mas detalles
+                    </button>
+                </Link>
                 <p className="card-text">Stock: {juego.stock}</p>
             </div>
-            <ItemCounter stock={juego.stock} onAdd={onAdd} />
+            <ItemCounter stock={juego.stock} />
         </div>
     );
 }
