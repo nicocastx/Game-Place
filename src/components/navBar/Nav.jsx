@@ -31,17 +31,17 @@ function Nav() {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/category/juegos">
+                                <Link className="nav-link" to="/juegos">
                                     Juegos
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/category/about">
+                                <Link className="nav-link" to="/about">
                                     Nosotros
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/category/contact">
+                                <Link className="nav-link" to="/contact">
                                     Contacto
                                 </Link>
                             </li>

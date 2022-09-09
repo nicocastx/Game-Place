@@ -6,6 +6,7 @@ import JuegoListContainer from './juegos/juegoListContainer/JuegoListContainer';
 import JuegoDetailContainer from './juegoDetailContainer/ItemDetailContainer'
 import About from './about/About'
 import Contact from './contact/Contact'
+import CategoriesContainer from './juegos/categoriesContainer/CategoriesContainer';
 
 
 function App() {
@@ -18,17 +19,20 @@ function App() {
             <h1 className="main-title">Bienvenido a Game Place</h1>
             <img src="https://i.pinimg.com/originals/99/cd/09/99cd0925c516b5d0a740dffd03c3e0df.gif" alt="inicio" />
           </div>} />
-          <Route path='/category/juegos' element={
+          <Route path='/juegos' element={
             <JuegoListContainer/>
           }/>
-                    <Route path='/category/about' element={
+                    <Route path='/about' element={
             <About/>
           }/>
-                    <Route path='/category/contact' element={
+                    <Route path='/contact' element={
             <Contact/>
           }/>
           <Route path='/item/:id' element={
             <JuegoDetailContainer/>
+          }/>
+                    <Route path='juegos/:idcat' element={
+            <CategoriesContainer/>
           }/>
           <Route path="*" element={<h1>ERROR! verifique la URL</h1>} />
       </Routes>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import JuegoList from '../juegoList/juegoList'
 import Loader from '../../Loader/Loader'
+import CategoriesListContainer from '../categoriesContainer/CategoriesListContainer';
 
 /*function consultarPromesa(confirmacion) {
     return new Promise((res, rej) => {
@@ -14,6 +15,7 @@ import Loader from '../../Loader/Loader'
 
 export default function JuegoListContainer() {
     const [Juegos, setJuegos] = useState([]);
+
     const [isLoading, setIsLoading] = useState(true)
     const getJuegosData = new Promise((res, rej) => {
         setTimeout(() => {
@@ -30,5 +32,10 @@ export default function JuegoListContainer() {
             .catch(error => console.log(error))
     }
     )
-    return isLoading ? <Loader /> : <JuegoList juegos={Juegos}></JuegoList>
+    return isLoading ? <Loader /> : (
+        <>
+            <CategoriesListContainer />
+            <JuegoList juegos={Juegos} />
+        </>
+    )
 }
