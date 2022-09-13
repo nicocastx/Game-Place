@@ -3,6 +3,7 @@ import JuegoList from '../juegoList/juegoList'
 import Loader from '../../Loader/Loader'
 import CategoriesListContainer from '../categoriesContainer/CategoriesListContainer';
 
+
 /*function consultarPromesa(confirmacion) {
     return new Promise((res, rej) => {
         if (confirmacion) {

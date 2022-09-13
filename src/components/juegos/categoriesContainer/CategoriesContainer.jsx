@@ -11,7 +11,7 @@ export default function CategoriesContainer() {
         .then(data => {
             setcatList(data.filter(juego => juego.categoria.includes(idcat)))
         })
-    }, [])
+    })
     return (
         <JuegoList juegos={catList}/>
     )

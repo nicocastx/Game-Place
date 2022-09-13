@@ -11,7 +11,7 @@ export default function JuegoDetail({ juego }) {
                 <p className='card-text detailStock'>Stock disponible: {juego.stock}</p>
                 <p className="card-text detailPrice">Precio: {juego.precio}</p>
                 <p className="card-text detailDesc">{juego.descripcion}</p>
-                <ItemCounter stock = {juego.stock} />
+                <ItemCounter juego = {juego} />
             </div> 
         </div>
     )

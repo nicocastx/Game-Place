@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import './ItemCounter.css';
+import { Link } from 'react-router-dom';
 
-function onAdd(stock, cant) {
-    if (stock > 0) {
-        console.log("se seleccionaron " + cant + " productos");
+function onAdd(juego, cant) {
+    if (juego.stock > 0) {
+        const juegoCarrito = {idCart: juego.id, cantCart: cant}
+        console.log(juegoCarrito)
     }
 }
 
-export default function ItemCounter({stock}) {
+export default function ItemCounter({juego}) {
     const [cant, setCant] = useState(1);
 
     function onSum() {
-        if (cant < stock) {
+        if (cant < juego.stock) {
             setCant(cant + 1)
         }
     }
@@ -26,10 +28,10 @@ export default function ItemCounter({stock}) {
         <div className='itemCounter'>
             <div className="counterContainer">
                 <button type="button" className="btn btn-op btn-primary" onClick={() => (onSum())}>+</button>
-                <p className='counter'>Cantidad: {stock === 0 ? 0 : cant}</p>
+                <p className='counter'>Cantidad: {juego.stock === 0 ? 0 : cant}</p>
                 <button type="button" className="btn btn-op btn-secondary" onClick={() => (onSub())}>-</button>
             </div>
-            <button type="button" className="btn btn-success" onClick={() => (onAdd(stock, cant))}>Agregar al carrito</button>
+            <Link to="/cart" type="button" className="btn btn-success" onClick={() => (onAdd(juego, cant))}>Agregar al carrito</Link>
         </div>
     )
 }

@@ -21,7 +21,7 @@ export default function Juego({ juego }) {
                 </Link>
                 <p className="card-text">Stock: {juego.stock}</p>
             </div>
-            <ItemCounter stock={juego.stock} />
+            <ItemCounter juego={juego} />
         </div>
     );
 }
