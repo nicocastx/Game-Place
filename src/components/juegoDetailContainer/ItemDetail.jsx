@@ -1,5 +1,5 @@
 import React from 'react'
-import ItemCounter from '../juegos/juego/itemCounter/ItemCounter'
+import ItemCounter from './itemCounter/ItemCounter'
 import './itemDetail.css'
 
 export default function JuegoDetail({ juego }) {

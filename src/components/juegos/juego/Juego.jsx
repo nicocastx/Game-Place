@@ -1,5 +1,4 @@
 import React from "react";
-import ItemCounter from "./itemCounter/ItemCounter";
 import "./Juego.css";
 import { Link } from "react-router-dom";
 
@@ -21,7 +20,6 @@ export default function Juego({ juego }) {
                 </Link>
                 <p className="card-text">Stock: {juego.stock}</p>
             </div>
-            <ItemCounter juego={juego} />
         </div>
     );
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import JuegoList from '../juegoList/juegoList'
 import Loader from '../../Loader/Loader'
 import CategoriesListContainer from '../categoriesContainer/CategoriesListContainer';
-
+import { useParams } from 'react-router-dom';
 
 /*function consultarPromesa(confirmacion) {
     return new Promise((res, rej) => {
@@ -16,7 +16,7 @@ import CategoriesListContainer from '../categoriesContainer/CategoriesListContai
 
 export default function JuegoListContainer() {
     const [Juegos, setJuegos] = useState([]);
-
+    const {idcat} = useParams();
     const [isLoading, setIsLoading] = useState(true)
     const getJuegosData = new Promise((res, rej) => {
         setTimeout(() => {
@@ -27,8 +27,12 @@ export default function JuegoListContainer() {
         getJuegosData
             .then(response => response.json())
             .then(data => {
-                setJuegos(data)
-                setIsLoading(false)
+                if(idcat){
+                    setJuegos(data.filter(juego => juego.categoria.includes(idcat)))
+                } else{
+                    setJuegos(data)
+                    setIsLoading(false)
+                }
             })
             .catch(error => console.log(error))
     }

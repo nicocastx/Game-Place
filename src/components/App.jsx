@@ -6,8 +6,6 @@ import JuegoListContainer from './juegos/juegoListContainer/JuegoListContainer';
 import JuegoDetailContainer from './juegoDetailContainer/ItemDetailContainer'
 import About from './about/About'
 import Contact from './contact/Contact'
-import CategoriesContainer from './juegos/categoriesContainer/CategoriesContainer';
-
 
 function App() {
   return (
@@ -32,10 +30,10 @@ function App() {
           <JuegoDetailContainer />
         } />
         <Route path='juegos/:idcat' element={
-          <CategoriesContainer />
+          <JuegoListContainer />
         } />
         <Route path='/cart' element={
-          <h1>carrito</h1>
+          <p>carrito</p>
         } />
         <Route path="*" element={<h1>ERROR! verifique la URL</h1>} />
       </Routes>

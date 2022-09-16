@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import JuegoDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
 import Loader from '../Loader/Loader'
-import './juegoDetailContainer.css'
+import './itemDetailContainer.css'
 
 export default function JuegoDetailContainer() {
     const {id} = useParams()
