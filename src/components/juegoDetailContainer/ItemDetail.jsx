@@ -16,7 +16,6 @@ export default function JuegoDetail({ juego }) {
         if (juego.stock > 0) {
             const juegoCarrito = {...juego, cantCart: cant}
             additem(juegoCarrito, cant)
-            console.log(cart)
             setComprado(true)
         }
     }
