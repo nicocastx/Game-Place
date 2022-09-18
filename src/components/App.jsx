@@ -6,10 +6,11 @@ import JuegoListContainer from './juegos/juegoListContainer/JuegoListContainer';
 import JuegoDetailContainer from './juegoDetailContainer/ItemDetailContainer'
 import About from './about/About'
 import Contact from './contact/Contact'
+import CartProvider from '../context/CartContext';
 
 function App() {
   return (
-    <div className="App">
+    <CartProvider className="App">
       <Nav />
       <Routes>
         <Route path="/" element={
@@ -37,7 +38,7 @@ function App() {
         } />
         <Route path="*" element={<h1>ERROR! verifique la URL</h1>} />
       </Routes>
-    </div>
+    </CartProvider>
   );
 }
 
