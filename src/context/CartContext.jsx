@@ -20,7 +20,9 @@ const CartProvider = (props) => {
     const additem = (juego, cant) => {
         const auxCart = cart
         if (!(isInCart(auxCart, juego))) {
-            auxCart.push({ ...juego, cantCart: cant })
+            let juegoCart = { ...juego, cantCart: cant }
+            delete juegoCart.stock
+            auxCart.push(juegoCart)
             setCart(auxCart)
         }
         else{
