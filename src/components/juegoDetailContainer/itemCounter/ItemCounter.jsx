@@ -23,7 +23,7 @@ export default function ItemCounter({juego, onAdd}) {
                 <p className='counter'>Cantidad: {juego.stock === 0 ? 0 : cant}</p>
                 <button type="button" className="btn btn-op btn-secondary" onClick={() => (onSub())}>-</button>
             </div>
-            <btn className="btn btn-success" onClick={() => (onAdd(juego, cant))}>Agregar al carrito</btn>
+            <button className="btn btn-success" onClick={() => (onAdd(juego, cant))}>Agregar al carrito</button>
         </div>
     )
 }
