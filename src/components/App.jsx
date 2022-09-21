@@ -7,6 +7,7 @@ import JuegoDetailContainer from './juegoDetailContainer/ItemDetailContainer'
 import About from './about/About'
 import Contact from './contact/Contact'
 import CartProvider from '../context/CartContext';
+import Cart from './Cart/Cart';
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
           <JuegoListContainer />
         } />
         <Route path='/cart' element={
-          <p>carrito</p>
+          <Cart/>
         } />
         <Route path="*" element={<h1>ERROR! verifique la URL</h1>} />
       </Routes>

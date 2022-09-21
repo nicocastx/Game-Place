@@ -46,7 +46,7 @@ function Nav() {
                                 </Link>
                             </li>
                         </ul>
-                        <CartWidget />
+                        <Link className="nav-link" to="/cart"><CartWidget/></Link>
                         <Form contBuscar="Busque algun juego" />
                     </div>
                 </div>

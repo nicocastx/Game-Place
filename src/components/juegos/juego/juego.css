@@ -23,3 +23,7 @@
 .imgContainer{
     height: 50%;
 }
+
+.inactive{
+    pointer-events: none;
+}
