@@ -16,15 +16,7 @@ export const CartContext = createContext();
 export const useCartContext = () => useContext(CartContext);
 
 const CartProvider = (props) => {
-    const [cart, setCart] = useState([{
-        id: 1,
-        nombre: "Minecraft",
-        descripcion: "prueba1",
-        precio: 14.99,
-        cantCart: 4,
-        url: "https://www.minecraft.net/content/dam/games/minecraft/key-art/Games_Subnav_Minecraft-300x465.jpg",
-        categoria : "accion aventura"
-    }])
+    const [cart, setCart] = useState([])
 
     const additem = (juego, cant) => {
         const auxCart = [...cart]
