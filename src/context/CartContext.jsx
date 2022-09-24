@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState } from 'react'
-import CartDetail from '../components/Cart/CartDetail';
 
 const isInCart = (cart, obj) =>{
     for (let i = 0; i < cart.length; i++) {
@@ -46,7 +45,7 @@ const CartProvider = (props) => {
         setCart([])
     }
 
-    return(
+    return( 
         <CartContext.Provider value={{cart, additem, removeitem, clear}}>
             {props.children}
         </CartContext.Provider>

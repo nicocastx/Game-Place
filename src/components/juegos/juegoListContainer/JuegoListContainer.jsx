@@ -4,16 +4,6 @@ import Loader from '../../Loader/Loader'
 import CategoriesListContainer from '../categoriesContainer/CategoriesListContainer';
 import { useParams } from 'react-router-dom';
 
-/*function consultarPromesa(confirmacion) {
-    return new Promise((res, rej) => {
-        if (confirmacion) {
-            res()
-        } else {
-            rej("Acceso Denegado")
-        }
-    })
-}*/
-
 export default function JuegoListContainer() {
     const [Juegos, setJuegos] = useState([]);
     const {idcat} = useParams();

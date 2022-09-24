@@ -6,10 +6,7 @@ import './itemDetail.css'
 import {useCartContext} from '../../context/CartContext'
 
 export default function JuegoDetail({ juego }) {
-    const {cart} = useCartContext();
     const{additem} = useCartContext();
-    const {removeitem} = useCartContext();
-    const {clear} = useCartContext();
     const [Comprado, setComprado] = useState(false)
 
     function onAdd(juego, cant) {
