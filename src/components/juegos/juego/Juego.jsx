@@ -11,7 +11,7 @@ export default function Juego({ juego }) {
             <div className="card-header">{juego.nombre}</div>
             <div className="card-body">
                 <div className="imgContainer">
-                    <img className="card-img" src={juego.url} alt="imagen juego" />
+                    <img className="card-img" src={juego.img} alt="imagen juego" />
                 </div>
                 <Link to={`/item/${juego.id}`} className={juego.stock === 0 ? 'inactive' : 'active'}>
                     <button type="button" className="btn btnDet btn-op btn-primary" disabled = {juego.stock === 0}>

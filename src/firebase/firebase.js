@@ -1,12 +1,16 @@
 // Esta es la aplicacion de firebase
-import "dotenv/config"
 import {
     initializeApp
 } from "firebase/app";
 import {
     collection,
     addDoc,
-    getFirestore
+    getDoc,
+    doc,
+    deleteDoc,
+    updateDoc,
+    getDocs,
+    getFirestore, where, query
 } from "firebase/firestore";
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -47,10 +51,40 @@ async function cargarBaseDeDatos() {
         })
     }
 
+    const getJuego = async (id) => {
+        const juego = await getDoc(doc(db, "juegos", id))
+        const result = {id:juego.id, ...juego.data()}
+        return result
+    }
+
+    const getJuegos = async () => {
+        try {
+            const juegos = await getDocs(collection(db, "juegos"))
+            const result = juegos.docs.map((doc) => doc = {id:doc.id, ...doc.data()})
+            return result 
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    const getJuegosCate = async (idcat) => {
+        try {
+            const document = query(collection(db, "juegos"), where("categoria", "==", idcat ))
+            const juegos = await getDocs(document)
+            const result = juegos.docs.map((doc) => doc = {id:doc.id, ...doc.data()})
+            return result 
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
         export {
             db,
             app,
-            cargarBaseDeDatos
+            cargarBaseDeDatos,
+            getJuego,
+            getJuegos,
+            getJuegosCate
         }
 
 //todo este archivo es la configuracion del codigo

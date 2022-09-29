@@ -3,20 +3,27 @@ import JuegoDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
 import Loader from '../Loader/Loader'
 import './itemDetailContainer.css'
+import {getJuego} from "../../firebase/firebase"
 
 export default function JuegoDetailContainer() {
     const {id} = useParams()
     const [Juego, setJuego] = useState([])
     const [isLoading, setisLoading] = useState(true)
-    const getJuego = new Promise((res, rej) => {
+    /*const getJuego = new Promise((res, rej) => {
         setTimeout(() => res(fetch('../data/datajuegos.json')), 2000)
-    })
+    })*/
     useEffect(() => {
-        getJuego
+        getJuego(id)
+        .then(data => {
+            setJuego(data)
+            console.log(Juego)
+            setisLoading(false)
+        })
+        /*getJuego
         .then(response => response.json())
         .then(data => {setJuego(data.find(juego => juego.id === Number(id)))
-        setisLoading(false)})
-    })
+        setisLoading(false)})*/
+    }, [id])
 
     return (
         isLoading ? <Loader/> : <div className='juegoDetailContainer'><JuegoDetail juego = {Juego}/></div> 
