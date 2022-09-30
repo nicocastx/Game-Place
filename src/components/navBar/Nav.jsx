@@ -35,16 +35,6 @@ function Nav() {
                                     Juegos
                                 </Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/about">
-                                    Nosotros
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/contact">
-                                    Contacto
-                                </Link>
-                            </li>
                         </ul>
                         <Link className="nav-link" to="/cart"><CartWidget/></Link>
                         <Form contBuscar="Busque algun juego" />

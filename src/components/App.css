@@ -1,16 +1,3 @@
-.main-title{
-    text-align: center;
-}
-
-.welcomeContainer{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-}
-
 img{
     width: 80%;
 }
