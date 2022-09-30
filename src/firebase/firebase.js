@@ -96,9 +96,10 @@ const getJuegosCate = async (idcat) => {
 const generoOrden = async (data) =>{
     try {
         const col = collection(db, "Orders")
-        await addDoc(col, {
+        const order = await addDoc(col, {
             data
         })
+        return order.id
     } catch (error) {
         console.log(error);
     }
