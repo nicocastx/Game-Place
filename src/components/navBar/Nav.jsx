@@ -1,9 +1,9 @@
 import React from 'react';
-import Form from './Form';
 import './Nav.css';
 import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom';
 
+//el menu de navegacion
 function Nav() {
     return (
         <div className="navBar">
@@ -37,7 +37,6 @@ function Nav() {
                             </li>
                         </ul>
                         <Link className="nav-link" to="/cart"><CartWidget/></Link>
-                        <Form contBuscar="Busque algun juego" />
                     </div>
                 </div>
             </nav>

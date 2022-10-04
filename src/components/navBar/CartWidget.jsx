@@ -2,6 +2,7 @@ import React from 'react';
 import './CartWidget.css';
 import { useCartContext } from '../../context/CartContext';
 
+//logica del carrito que aparezca o desaparezca dependiendo de la cantidad de items
 export default function CartWidget() {
     const {cart} = useCartContext();
     let cartL = cart.length;

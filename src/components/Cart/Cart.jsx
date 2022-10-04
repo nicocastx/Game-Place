@@ -2,9 +2,10 @@ import React from 'react'
 import { useCartContext } from '../../context/CartContext'
 import CartDetail from './CartDetail'
 import { Link } from 'react-router-dom';
+import './cart.css';
 
 
-
+//Componente Cart de cada uno de los items
 export default function Cart() {
     const { cart, clear, calcularTotal } = useCartContext();
     return (
@@ -26,13 +27,15 @@ export default function Cart() {
                         <button type="button" className="btn btnDet btn-op btn-secondary" onClick={clear}>
                             Limpiar Carrito
                         </button>
-                        <h2>Total = </h2>
-                        <p>{calcularTotal()}</p>
-                        <Link to={`/checkout`}>
-                            <button type="button" className="btn btnDet btn-op btn-primary">
-                                Finalizar Compra
-                            </button>
-                        </Link>
+                        <div className="finCompraContainer">
+                            <h2>Total = </h2>
+                            <p className='total-counter'>{calcularTotal()}</p>
+                            <Link to={`/checkout`}>
+                                <button type="button" className="btn btnDet btn-op btn-success">
+                                    Finalizar Compra
+                                </button>
+                            </Link>
+                        </div>
                     </div>
                 </>}
         </div>

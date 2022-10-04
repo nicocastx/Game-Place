@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useCartContext } from '../../context/CartContext'
 import { generoOrden } from '../../firebase/firebase'
+import './checkout.css'
 
+//componente para finalizar la compra
 export default function Checkout() {
     const { cart, calcularTotal, clear } = useCartContext()
     const [orderId, setOrderId] = useState()
@@ -22,6 +24,7 @@ export default function Checkout() {
         })
     }
 
+    //funcion asincronica para manejar el evento de finalizar compra y generar orden
     const handleSubmit = (e) => {
         e.preventDefault()
         const items = cart.map(e => { return { id: e.id, title: e.nombre, price: e.precio, amount: e.cantCart } })
@@ -36,20 +39,22 @@ export default function Checkout() {
     return (
         <>
 
-            <h2>Necesitamos unos datos...</h2>
+            <h2 className='finTitle'>Necesitamos unos datos...</h2>
             <hr />
             {!orderId ? (
                 <>
-                    <h3>Complete el formulario para continuar</h3>
-                    <form action="">
+                    <div className="reqFormContainer">
+                        <h3 >Complete el formulario para continuar</h3>
+                    </div>
 
-                        <label htmlFor="nombre">Ingrese su nombre aqui</label>
+                    <form className='finFormContainer' action="">
+                        <label  className='labelForm' htmlFor="nombre">Ingrese su nombre aqui</label>
                         <input type="text" name="nombre" id="nombre" placeholder='Nombre' value={nombre} onChange={handleInputChange} />
-                        <label htmlFor="email">Ingrese su email aqui</label>
+                        <label className='labelForm' htmlFor="email">Ingrese su email aqui</label>
                         <input type="text" name="email" id="email" placeholder='Email' value={email} onChange={handleInputChange} />
-                        <label htmlFor="phone">Ingrese su numero de telefono aqui</label>
+                        <label className='labelForm' htmlFor="phone">Ingrese su numero de telefono aqui</label>
                         <input type="text" name="phone" id="email" placeholder='Numero de celular' value={phone} onChange={handleInputChange} />
-                        <input type="submit" className='btn btn-success' value="Finalizar compra" onClick={handleSubmit} />
+                        <input type="submit" className='btn btnFin btn-success' value="Finalizar compra" onClick={handleSubmit} />
                     </form>
                 </>
             ) : <h2>Su orden ya fue realizada, su orden de compra es: {orderId}</h2>}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Loader.css'
 
+//un loader para la carga del settimeout
 export default function Loader() {
     return (
         <div className='loaderContainer'>

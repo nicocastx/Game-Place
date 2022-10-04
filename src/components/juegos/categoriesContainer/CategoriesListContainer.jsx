@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './categoriesListContainer.css'
 import JuegoListContainer from '../juegoListContainer/JuegoListContainer'
 
+//componente de categorias
 export default function CategoriesListContainer() {
     return (
         <ul className="nav nav-pills">

@@ -1,0 +1,28 @@
+.finFormContainer{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    border-style: solid;
+    padding: 20px;
+}
+
+.reqFormContainer{
+    width: 100%;
+    text-align: center;
+}
+
+.labelForm{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.btnFin{
+    margin-top: 10%;
+    height: 4rem;
+}
+
+.finTitle{
+    text-align: center;
+}

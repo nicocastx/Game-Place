@@ -1,12 +1,13 @@
 import React from 'react'
 import { useCartContext } from '../../context/CartContext'
 
+//componente de cada uno de los items de cart
 export default function CartDetail({ itemC }) {
     const {removeitem} = useCartContext();
     return (
         <div className="card rounded-3 mb-4">
             <div className="card-body p-4">
-                <div className="row d-flex justify-content-between align-items-center">
+                <div className=" conceptoItem row d-flex justify-content-between align-items-center">
                     <div className="col-md-2 col-lg-2 col-xl-2">
                         <img src={itemC.img} className="img-fluid rounded-3" alt={"imagen de " + itemC.nombre} />
                     </div>

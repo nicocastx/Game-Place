@@ -5,13 +5,12 @@ import Loader from '../Loader/Loader'
 import './itemDetailContainer.css'
 import {getJuego} from "../../firebase/firebase"
 
+//componente que hace consulta a la bd y luego lo pasa a un componente de renderizado de un detalle de item
 export default function JuegoDetailContainer() {
     const {id} = useParams()
     const [Juego, setJuego] = useState([])
     const [isLoading, setisLoading] = useState(true)
-    /*const getJuego = new Promise((res, rej) => {
-        setTimeout(() => res(fetch('../data/datajuegos.json')), 2000)
-    })*/
+
     useEffect(() => {
         getJuego(id)
         .then(data => {
@@ -19,10 +18,7 @@ export default function JuegoDetailContainer() {
             console.log(Juego)
             setisLoading(false)
         })
-        /*getJuego
-        .then(response => response.json())
-        .then(data => {setJuego(data.find(juego => juego.id === Number(id)))
-        setisLoading(false)})*/
+
     }, [id])
 
     return (
