@@ -1,7 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+# Game Place: Proyecto Coderhouse curso REACT
 ##Algunas capturas del proyecto:
 ![image](https://user-images.githubusercontent.com/80975807/195153292-dca31f99-9de3-431f-9ee4-64b4f4bda0c4.png)
 ![image](https://user-images.githubusercontent.com/80975807/195153340-883ae7b0-dadd-4f95-a9c0-9320dbe68ec4.png)
@@ -14,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Video de navegacion en la pagina web:
 https://drive.google.com/file/d/1admnPCXzvFbaT2kRH5jWl37A463sGOp8/view?usp=sharing
 
-##Deploy en Vercel
+## Deploy en Vercel
 https://game-place.vercel.app/
 
 ## Desarrollo de Proyecto React para Coderhouse: Game Place
