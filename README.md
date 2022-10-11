@@ -1,5 +1,5 @@
 # Game Place: Proyecto Coderhouse curso REACT
-##Algunas capturas del proyecto:
+## Algunas capturas del proyecto:
 ![image](https://user-images.githubusercontent.com/80975807/195153292-dca31f99-9de3-431f-9ee4-64b4f4bda0c4.png)
 ![image](https://user-images.githubusercontent.com/80975807/195153340-883ae7b0-dadd-4f95-a9c0-9320dbe68ec4.png)
 ![image](https://user-images.githubusercontent.com/80975807/195153425-580757ed-ddbe-4b7e-97d4-e259ff33cc76.png)
