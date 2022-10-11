@@ -14,9 +14,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Video de navegacion en la pagina web:
 https://drive.google.com/file/d/1admnPCXzvFbaT2kRH5jWl37A463sGOp8/view?usp=sharing
 
+##Deploy en Vercel
+https://game-place.vercel.app/
+
 ## Desarrollo de Proyecto React para Coderhouse: Game Place
 ### Desarrollador: Kevin Castillo
-Este proyecto se trata de una tienda online de videojuegos donde se puede comprar a traves de un stock una cantidad de juegos especificos de una base de datos JSON}
+Este proyecto se trata de una tienda online de videojuegos donde se puede comprar a traves de un stock una cantidad de juegos especificos de una base de datos subida en Firebase, ademas del uso de contexto para carritos y routing
 
 ## Available Scripts
 
