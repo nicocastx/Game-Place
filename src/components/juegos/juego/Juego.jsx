@@ -1,5 +1,5 @@
 import React from "react";
-import "./Juego.css";
+import "./juego.css";
 import { Link } from "react-router-dom";
 
 //renderizado de cada uno de los juegos en la lista de juegos
