@@ -2,8 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##Algunas capturas del proyecto:
+![image](https://user-images.githubusercontent.com/80975807/195153292-dca31f99-9de3-431f-9ee4-64b4f4bda0c4.png)
+![image](https://user-images.githubusercontent.com/80975807/195153340-883ae7b0-dadd-4f95-a9c0-9320dbe68ec4.png)
+![image](https://user-images.githubusercontent.com/80975807/195153425-580757ed-ddbe-4b7e-97d4-e259ff33cc76.png)
+![image](https://user-images.githubusercontent.com/80975807/195153465-59942969-7ee9-4670-bbd0-b1983a1e3772.png)
+![image](https://user-images.githubusercontent.com/80975807/195153493-a1e992a9-53fd-44d8-ab5c-c7e52b164bd7.png)
+![image](https://user-images.githubusercontent.com/80975807/195153568-3e44a9ce-6229-4826-8200-e4e2c602fa23.png)
+
+
 ## Video de navegacion en la pagina web:
-https://drive.google.com/file/d/1JfjVCBuZQNQVIgHgsNfgBTHHIgit9FYh/view?usp=sharing
+https://drive.google.com/file/d/1admnPCXzvFbaT2kRH5jWl37A463sGOp8/view?usp=sharing
 
 ## Desarrollo de Proyecto React para Coderhouse: Game Place
 ### Desarrollador: Kevin Castillo
