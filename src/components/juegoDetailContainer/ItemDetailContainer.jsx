@@ -15,7 +15,6 @@ export default function JuegoDetailContainer() {
         getJuego(id)
         .then(data => {
             setJuego(data)
-            console.log(Juego)
             setisLoading(false)
         })
 

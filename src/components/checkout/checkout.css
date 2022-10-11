@@ -11,6 +11,7 @@
 .reqFormContainer{
     width: 100%;
     text-align: center;
+    margin: 2%;
 }
 
 .labelForm{
@@ -25,4 +26,21 @@
 
 .finTitle{
     text-align: center;
+}
+
+.finContainer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height:90vh;
+}
+
+.btnVolver{
+    height: 8vh;
+    margin-top: auto;
+}
+
+.imgFin{
+    margin-top: auto;
 }

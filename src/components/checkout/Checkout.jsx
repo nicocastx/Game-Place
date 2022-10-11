@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
 import { useCartContext } from '../../context/CartContext'
 import { generoOrden } from '../../firebase/firebase'
 import './checkout.css'
+import Swal from 'sweetalert2'
+import { Link } from 'react-router-dom'
+import Home from '../Home/Home'
 
 //componente para finalizar la compra
 export default function Checkout() {
@@ -31,24 +34,25 @@ export default function Checkout() {
         const dia = new Date()
         const total = calcularTotal()
         const data = { buyer, items, dia, total }
-        console.log("data", data)
         generoOrden(data)
             .then(id => setOrderId(id))
         clear()
     }
+
+    const finCompraSwal = () => {
+        Swal.fire('Orden Completa, Wuju!', `Su orden ya fue realizada, su orden de compra es: ${orderId}`, 'success')
+    }
+
+
     return (
         <>
-
-            <h2 className='finTitle'>Necesitamos unos datos...</h2>
-            <hr />
             {!orderId ? (
                 <>
                     <div className="reqFormContainer">
                         <h3 >Complete el formulario para continuar</h3>
                     </div>
-
                     <form className='finFormContainer' action="">
-                        <label  className='labelForm' htmlFor="nombre">Ingrese su nombre aqui</label>
+                        <label className='labelForm' htmlFor="nombre">Ingrese su nombre aqui</label>
                         <input type="text" name="nombre" id="nombre" placeholder='Nombre' value={nombre} onChange={handleInputChange} />
                         <label className='labelForm' htmlFor="email">Ingrese su email aqui</label>
                         <input type="text" name="email" id="email" placeholder='Email' value={email} onChange={handleInputChange} />
@@ -57,7 +61,17 @@ export default function Checkout() {
                         <input type="submit" className='btn btnFin btn-success' value="Finalizar compra" onClick={handleSubmit} />
                     </form>
                 </>
-            ) : <h2>Su orden ya fue realizada, su orden de compra es: {orderId}</h2>}
+            ) : <>
+                {finCompraSwal()}
+                <div className="finContainer">
+                    <h2 className='finTitleCompra'>Felicidades, su compra termino exitosamente</h2>
+                    <h3>Su orden de compra es: {orderId}</h3>
+                    <Link className='btnHome' to='/' element={<Home />}>
+                        <button className='btn btn-success btnVolver'>Volver al Inicio</button> 
+                    </Link>
+                    <img className='imgFin' src="https://i.pinimg.com/originals/85/d3/5c/85d35c6c1461bc83028e9c23357cf3ac.gif" alt="hombre con instrumento" />
+                </div>
+            </>}
         </>
     )
 }

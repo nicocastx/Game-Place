@@ -1,6 +1,5 @@
 .total-counter{
     font-size: 5rem;
-
 }
 
 .finCompraContainer{
@@ -15,4 +14,15 @@
 
 .conceptoItem{
     width: 50%;
+}
+
+.eliminarItem{
+    font-size: 4rem;
+    text-decoration: none;
+    color: red;
+    transition: all 0.3s ease;
+}
+
+.eliminarItem:hover{
+    color: darkred;
 }

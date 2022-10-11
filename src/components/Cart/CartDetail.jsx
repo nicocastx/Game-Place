@@ -22,7 +22,7 @@ export default function CartDetail({ itemC }) {
                         <h5 className="mb-0">{"$" + itemC.precio}</h5>
                     </div>
                     <div className="col-md-2 col-lg-1 col-xl-1 text-end">
-                        <a href="#!" className="text-danger" onClick={() =>{removeitem(itemC)}}>Borrar</a>
+                        <a className='eliminarItem' href="#!" onClick={() =>{removeitem(itemC)}}>X</a>
                     </div>
                 </div>
             </div>

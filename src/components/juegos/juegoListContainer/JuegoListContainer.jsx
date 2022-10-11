@@ -17,7 +17,6 @@ export default function JuegoListContainer() {
             getJuegosCate(idcat)
             .then(data => {
                 setJuegos(data)
-                console.log(Juegos)
                 setIsLoading(false)
                 
             })
@@ -25,8 +24,6 @@ export default function JuegoListContainer() {
             getJuegos()
             .then(data => {
                 setJuegos(data)
-                console.log(Juegos)
-
                 setIsLoading(false)
                 
             })

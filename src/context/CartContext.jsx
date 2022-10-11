@@ -48,7 +48,7 @@ const CartProvider = (props) => {
     const calcularTotal = () => {
         let total = 0
         total = cart.reduce((acum, juego) => acum + juego.cantCart * juego.precio, 0)
-        return total
+        return parseFloat(total).toFixed(2)
     }
 
     return( 

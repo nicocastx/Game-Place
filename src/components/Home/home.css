@@ -1,12 +1,27 @@
-.main-title{
+.main-title {
     text-align: center;
 }
 
-.welcomeContainer{
-    height: 100vh;
+.titleContainer {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+    width: 80vw;
+    height: fit-content;
+    margin-top: 2%;
+    border-radius: 30px;
+}
+
+.titleContainer:active {
+    top: 2px;
+}
+
+.welcomeContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     vertical-align: middle;
+    align-items: center;
+    height: 92vh;
+    vertical-align: text-top;
+    background-image: url(https://i.pinimg.com/originals/99/cd/09/99cd0925c516b5d0a740dffd03c3e0df.gif);
+    background-repeat: no-repeat;
+    background-position: center;
 }
